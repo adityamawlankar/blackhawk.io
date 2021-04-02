@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Black_Hawk</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Blog Stylesheet File -->
+  <link href="css/blog.css" rel="stylesheet">
+  
+  
+  <!-- Responsive css -->
+	<link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav-subpage" class="subpage-nav">
+    <div class="row">
+      <div class="container">
+
+        <!-- <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div> -->
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#top" class="smoothScroll">Scroll up</a></li>
+          <!-- <li><a href="#about" class="smoothScroll">About</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+  <!-- start section main content -->
+  <div class="main-content paddsection">
+    <div class="container" id="top">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-md-offset-2">
+          <div class="row">
+            <div class="container-main single-main">
+              <div class="col-md-12">
+                <div class="block-main mb-30">
+                  <img src="images/blackhawk.png" class="res" alt="reviews2">
+                  <div class="content-main single-post padDiv">
+                    <div class="journal-txt">
+                      <h4>Object Oriented programming <br>Black Hawk</h4>                    
+                      <!-- <a href="https://adityamawlankar.github.io/Black_Hawk/"> <br>Play the game</a> -->
+                      <hr>
+                    </div>
+                    <div class="post-meta">
+                      <ul class="list-unstyled mb-0">
+                          <li class="date">Role: Lead Programmer, Strategy & Ideation, UX design</li>
+                        <li class="author">Tools: Processing in Java , Photoshop</li>
+                        <li class="date">date:<a href="#">Summer 2018</a></li>
+                        <li class="date">Academic Project</li>
+
+                      </ul>
+                    </div>
+                    <p class="mb-30">The main objective of this project was to complete a task using given objects. The task is one where there had to be 
+                        a protagonist and antagonist who had to pass different levels to defeat the boss. 
+                        <h5>Design</h5>
+                      <p class="mb-30">Each character had to be designed by ourselves along with the floor map and plan. individual
+                          width and height of the object mattered as those images would then be implemented in programming. For this I choose 
+                          going with an individual commando where I created him using Photoshop along with the other characters.
+                          <div class="block-main mb-30">
+                            <img src="images/icon.png" class="res" alt="reviews2">
+                            <div class="caption"><figcaption>Icons</figcaption></div>
+
+                          </div>
+                      <p>Some of the images are taken from : https://unluckystudio.com/free-top-down-shooterplayer-sprites/</p>
+                      <h5>Programming</h5>
+                      <p class="mb-30">Due to this being OOPS concepts such as inheritance, encapsulation, polymorphism has been used. Moreover, the bounding box has been used for 
+                          object detection. Following is the structure of the code.
+                      </p>
+                      <img src="images/black.jpg" class="res" alt="reviews2">
+                      <div class="caption"><figcaption>Structure of code</figcaption></div>
+
+
+                      <div class="block-main mb-30">
+                      <img src="images/gameplay-1.png" class="res" alt="reviews2">
+                      <div class="caption"><figcaption>Level one of game</figcaption></div>
+                      <p>Each enemy has a radius in which he or she can shoot if the player is present. This is made possible with the help of creating a Bounding box for object detection. Three different levels have been implemented with a boss fight in the end.</p>
+                      <img src="images/gameplay-2.png" class="res" alt="reviews2">
+                      <div class="caption"><figcaption>Enemies shooting at the player as he is in range of bounding box </figcaption></div>
+                      <!-- <video width="1280" height="720"controls>
+                      <source src="Untitled.mp4" type="video/mp4">
+                      </video> -->
+                    </div>
+                    <p class="mb-30">To make different levels a 3D matrix has been made where each number in the matrix corresponds to individual objects. e.g 1 is 
+                        a corner block & 0 is open space where the player can move.</p>
+                      <h5>Challenge</h5>
+                      <p class="mb-30"> There were multiple challenges while the development took place but the important one amongst them optimized the game. Let me explain! What happens is that when the game loads, in the beginning, all the images are rendered at their respective
+                          places, but reading through that 3D matrix and simultaneously loading those images when the player is moving all over the internet might not work at the same time, due to lack of resources such as computing power or the network. All this results in is Lack of User Experience.
+                          </p>
+                      <h5>Solution</h5>
+                      <p class="mb-30"> To resolve this the camera class has been implemented in the program, what this does is that relative to the player's position
+                          it starts to load objects in the direction in which the player moves while keeping the remaining items to be loaded in the buffer memory. With the help
+                          of this technique, every object isn't loaded at once but only when it is needed on the screen.
+                      </p>
+
+                    <h5>Reflections</h5>
+                    <p class="mb-30">This project was one of the good projects that I had done especially because I got to learn a lot of concepts
+                        through it, moreover, the game got a final grade of 95%. While there were many things which I wanted to do, due to the time constraint had to be shortened! I relied heavily on the java documentation and the forums.<br>Really satisfied with the response the professor gave.
+                        </p>
+                    <!-- <a href="https://adityamawlankar.github.io/Black_Hawk/"target="_blank">Play the game</a> -->
+                    <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sctnfkzzVFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </div> -->
+  <!-- End section footer -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
